@@ -1,0 +1,150 @@
+* {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+section  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+
+button {
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  transition-duration: 0.4s;
+  outline: 0 !important;
+
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h4 {
+  padding: 1em;
+  text-align: center;
+}
+
+#addBook, #getTheKey, #viewBooks, #changeBook, #deleteBook {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#getTheKey {
+  margin-left: 2em;
+}
+
+#viewBooks {
+  position: relative;
+  margin-left: 17%;
+}
+
+#theKey {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.showList {
+  align-items: center;
+}
+
+#bookListError {
+  align-items: center;
+  margin-top: 1em;
+}
+
+
+.picForTitle {
+  background-image: url('libraryPic.jpg');
+  height: 150px;
+  margin-bottom: 1em;
+}
+
+.mainTitle {
+  vertical-align: middle;
+  line-height: 150px;
+  text-shadow: 2px 2px 1px black;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+.updating {
+/*  display: grid;*/
+}
+
+.tableOfBooks {
+  margin-top: 2em;
+  display: none;
+  /*border: 1px solid black;
+  border-collapse: collapse;*/
+  nth-child(even)background-color: #f2f2f2;*/
+}
+
+.tableOfBooks td, .tableOfBooks th {
+  /*border: 1px solid black;
+  border-collapse: collapse;*/
+  width: 300px;
+  height: 35px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #FFD5C2;
+}
+
+th {
+  background-color: #C8553D;
+}
+.msgForUser, #bookListError, .msgAboutRemoval, #theKey, .msgAboutChange {
+  margin-left: 3em;
+}
+
+.msgAboutChange {
+  margin-left: 36%;
+}
+
+input {
+  background-color: lightgray;
+  /*width: 20%;*/
+  border-radius: 10px;
+  margin: 1em;
+  outline:none;
+}
+
+.access {
+  background-color: #FFFFFF;
+
+}
+
+.addition {
+  background-color: #FFD5C2;
+
+}
+
+.showList {
+  background-color: #F28F3B;
+}
+
+.updating {
+  background-color: #588B8B;
+}
+
+.removal {
+  background-color: #C8553D;
+}
+
+/*588B8B    FFFFFF    FFD5C2     F28F3B    C8553D

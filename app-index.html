@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My books catalog</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <div class="picForTitle">
+    <h3 class="mainTitle">Your electronic library</h3>
+  </div>
+
+  <section class="access">
+    <div class="access">
+      <h4>Press the button below to start</h4>
+      <button id="getTheKey">Fetch access key</button>
+      <div id="theKey">Waiting for the key...
+      </div>
+      <div id="badApi">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="addition">
+    <div class="addition">
+      <h4>Add some books to the catalog</h4>
+      <input type="text" class="author" placeholder="Author"> </input>
+      <input type="text" class="title" placeholder="Title"> </input>
+      <button id="addBook">Add a book</button>
+      <div class="msgForUser">
+      </div>
+    </div>
+  </section>
+
+  <section class="showList">
+    <div class="showList">
+      <h4>View books in the catalog</h4>
+      <button id="viewBooks">Show</button>
+      <!-- The table that's hidden until the button is clicked-->
+      <table class="tableOfBooks">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Last update</th>
+          </tr>
+        </thead>
+        <tbody id="bookList">
+          <!-- Book tr's are gonna be appended here dynamicly-->
+        </tbody>
+      </table>
+      <div id="bookListError">
+      </div>
+    </section>
+
+
+    <section class="updating">
+      <div class="updating">
+        <h4>Something is wrong? Change it here</h4>
+        <input type="text" class="changeAuthor" placeholder="Authour"> </input>
+        <input type="text" class="changeTitle" placeholder="Title"> </input>
+        <input type="text" class="changeId" placeholder="Book's ID"> </input>
+        <button id="changeBook">Change</button>
+        <div class="msgAboutChange"></div>
+      </section>
+
+      <section class="removal">
+        <div class="removal">
+          <h4>Delete books from the catalog</h4>
+          <input class="deleteBookId" placeholder="Book's ID"> </input>
+          <button id="deleteBook">Delete</button>
+          <div class="msgAboutRemoval"></div>
+        </div>
+      </section>
+
+
+    </body>
+    </html>
