@@ -17,13 +17,14 @@
   </div>
 
   <section class="access">
-    <div class="access">
-      <h4>Press the button below to start</h4>
+    <div class="accessing">
+      <h4 id="pressToStart">Press the button below to start</h4>
       <button id="getTheKey">Fetch access key</button>
       <div id="theKey">Waiting for the key...
       </div>
-      <div id="badApi">
-      </div>
+    </div>
+    <div id="badApi">Errors
+      <div id="numOfErrors"></div>
     </div>
   </section>
 
@@ -51,6 +52,8 @@
             <th>Author</th>
             <th>Title</th>
             <th>Last update</th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody id="bookList">
@@ -62,7 +65,7 @@
     </section>
 
 
-    <section class="updating">
+  <!--  <section class="updating">
       <div class="updating">
         <h4>Something is wrong? Change it here</h4>
         <input type="text" class="changeAuthor" placeholder="Authour"> </input>
@@ -79,6 +82,12 @@
           <button id="deleteBook">Delete</button>
           <div class="msgAboutRemoval"></div>
         </div>
+      </section>-->
+
+      <section class="errors">
+        <h4>Errors that appeared during the session:</h4>
+        <ul id="errorLog">
+        </ul>
       </section>
 
 

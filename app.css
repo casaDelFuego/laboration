@@ -32,6 +32,10 @@ h4 {
   text-align: center;
 }
 
+#pressToStart {
+
+}
+
 #addBook, #getTheKey, #viewBooks, #changeBook, #deleteBook {
   font-size: 20px;
   text-align: center;
@@ -39,7 +43,7 @@ h4 {
 
 
 #getTheKey {
-  margin-left: 2em;
+  margin-left: 35em;
 }
 
 #viewBooks {
@@ -48,7 +52,7 @@ h4 {
 }
 
 #theKey {
-  margin-left: 2em;
+  margin-left: 35.5em;
   margin-top: 1em;
 }
 
@@ -109,8 +113,12 @@ tr:nth-child(even) {
 th {
   background-color: #C8553D;
 }
-.msgForUser, #bookListError, .msgAboutRemoval, #theKey, .msgAboutChange {
+.msgForUser, #bookListError, .msgAboutRemoval, .msgAboutChange {
   margin-left: 3em;
+}
+
+#theKey {
+  margin-left: 35em;
 }
 
 .msgAboutChange {
@@ -118,20 +126,28 @@ th {
 }
 
 input {
-  background-color: lightgray;
-  /*width: 20%;*/
   border-radius: 10px;
   margin: 1em;
   outline:none;
 }
 
-.access {
-  background-color: #FFFFFF;
-
+#badApi {
+  align-items: center;
+  font-size: 30px;
+  float: right;
 }
 
-.addition {
+.access {
   background-color: #FFD5C2;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 5fr 1fr;
+  justify-content: center;
+}
+
+
+.addition {
+  background-color: #588B8B;
 
 }
 
@@ -139,11 +155,15 @@ input {
   background-color: #F28F3B;
 }
 
-.updating {
+/*.updating {
   background-color: #588B8B;
 }
 
 .removal {
+  background-color: #C8553D;
+}*/
+
+.errors {
   background-color: #C8553D;
 }
 
